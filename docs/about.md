@@ -2,4 +2,4 @@
 
 This site is generated using MkDocs and the Material theme.
 
-It demonstrates a basic setup including GitHub Pages deployment. 
+It demonstrates a basic setup including GitHub Pages deployment.
