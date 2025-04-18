@@ -1,0 +1,55 @@
+site_name: My MkDocs Site
+site_description: A sample MkDocs site.
+# Replace with your actual GitHub Pages URL
+site_url: https://<USERNAME>.github.io/<REPO_NAME>/
+# Replace with your actual GitHub repository URL
+repo_url: https://github.com/<USERNAME>/<REPO_NAME>/
+repo_name: <USERNAME>/<REPO_NAME> # Optional: displays the repo name
+
+theme:
+  name: material
+  # Optional features
+  logo: assets/logo.png # You'll need to create an assets/logo.png file
+  favicon: assets/favicon.png # You'll need to create an assets/favicon.png file
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+
+# Navigation menu
+nav:
+  - Home: index.md
+  - About: about.md
+
+# Plugins
+plugins:
+  - search # Required for search functionality
+
+# Optional: Add custom CSS or JavaScript
+# extra_css:
+#   - stylesheets/extra.css
+# extra_javascript:
+#   - javascripts/extra.js
+
+# Markdown extensions
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true 
